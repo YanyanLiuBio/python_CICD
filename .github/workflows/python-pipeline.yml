@@ -2,6 +2,10 @@ name: Python CI/CD Pipeline
 
 on: [push, workflow_dispatch]
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   lint-and-test:
     name: Lint and Test
